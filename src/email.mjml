@@ -5,7 +5,7 @@
       <mj-text font-size="16px" line-height="24px" />
     </mj-attributes>
     <mj-style>
-      /* TODO: Replace olet bserved copy and confirm asset approval before release. */
+      /* TODO: Replace observed copy and confirm asset approval before release. */
       .sr-only {
         position: absolute !important;
         width: 1px !important;
@@ -34,6 +34,25 @@
       }
       .hero-button a {
         white-space: nowrap !important;
+      }
+      .harvest-bowl {
+        position: relative !important;
+        z-index: 2 !important;
+        top: 0 !important;
+        height: 0 !important;
+        line-height: 0 !important;
+      }
+      .harvest-button table {
+        width: 92% !important;
+      }
+      .harvest-button a {
+        white-space: nowrap !important;
+      }
+      @media only screen and (max-width: 480px) {
+        .harvest-title div {
+          font-size: 30px !important;
+          line-height: 1.02 !important;
+        }
       }
     </mj-style>
   </mj-head>
@@ -69,6 +88,64 @@
         <mj-text css-class="sr-only" padding="0">
           Provisional hero CTA: GET YOUR 30% OFF NOW!
         </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Autumn Harvest Bowls: observed portfolio recreation from reference image. -->
+    <mj-section background-color="#f1f2df" padding="0 20px 0">
+      <mj-column width="560px">
+        <mj-image
+          src="../assets/decorative-pumpkin.png"
+          alt=""
+          width="64px"
+          align="right"
+          padding="0"
+        />
+        <mj-text
+          css-class="harvest-title"
+          align="center"
+          color="#075344"
+          font-family="Arial Black, Arial, Helvetica, sans-serif"
+          font-size="38px"
+          font-weight="900"
+          line-height="1.02"
+          letter-spacing="-0.5px"
+          padding="0 32px 18px"
+          text-transform="uppercase"
+        >
+          THE AUTUMN<br />HARVEST BOWLS
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Portfolio composite supplied in assets; replace with separated/live content if required for a production send. -->
+    <mj-section background-color="#f1f2df" padding="0 20px">
+      <mj-column width="560px">
+        <mj-image
+          src="../assets/salad-bowl-banner.png"
+          alt="Autumn harvest bowl with description, nutrition values, and salad bowl"
+          width="560px"
+          padding="0"
+        />
+        <!-- TODO: Confirm composite copy and nutrition values before any production use. -->
+        <mj-text css-class="sr-only" padding="0">
+          Maple-glazed Brussels sprouts, roasted sweet potatoes, apples, goat cheese, almonds, wild rice, and balsamic vinaigrette. 860 calories, 34G protein, 18G sugar, 72G carbs, 50G fat.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#f1f2df" padding="24px 20px 28px">
+      <mj-column width="560px">
+        <mj-button
+          css-class="harvest-button"
+          href="https://www.sweetgreen.com/"
+          background-color="#075344"
+          color="#ffffff"
+          border-radius="28px"
+          font-size="16px"
+          font-weight="700"
+          inner-padding="15px 24px"
+          padding="0"
+        >
+          GET YOUR 30% OFF NOW!
+        </mj-button>
       </mj-column>
     </mj-section>
   </mj-body>
