@@ -1,0 +1,18 @@
+{
+  "name": "sweetgreen-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "validate": "mjml --validate src/email.mjml",
+    "build": "mkdir -p dist && mjml src/email.mjml -o dist/email.html",
+    "test": "npm run validate && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "mjml": "^5.4.1"
+  }
+}
