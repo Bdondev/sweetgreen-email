@@ -54,6 +54,16 @@
           line-height: 1.02 !important;
         }
       }
+      .loyalty-photo {
+        position: relative !important;
+        z-index: 1 !important;
+        top: -150px !important;
+        margin-bottom: -150px !important;
+      }
+      .loyalty-card {
+        position: relative !important;
+        z-index: 2 !important;
+      }
     </mj-style>
   </mj-head>
   <mj-body background-color="#f5f5f0">
@@ -61,7 +71,7 @@
     <mj-section background-color="#0b4f3f" padding="0">
       <mj-column width="600px">
         <mj-image
-          src="../assets/hero.png"
+          src="assets/hero.png"
           alt="sweetgreen — BLACK FRIDAY BLISS — 30% OFF"
           width="600px"
           padding="0"
@@ -94,7 +104,7 @@
     <mj-section background-color="#f1f2df" padding="0 20px 0">
       <mj-column width="560px">
         <mj-image
-          src="../assets/decorative-pumpkin.png"
+          src="assets/decorative-pumpkin.png"
           alt=""
           width="64px"
           align="right"
@@ -120,7 +130,7 @@
     <mj-section background-color="#f1f2df" padding="0 20px">
       <mj-column width="560px">
         <mj-image
-          src="../assets/salad-bowl-banner.png"
+          src="assets/salad-bowl-banner.png"
           alt="Autumn harvest bowl with description, nutrition values, and salad bowl"
           width="560px"
           padding="0"
@@ -152,8 +162,54 @@
     <mj-section background-color="#f1f2df" padding="0">
       <mj-column width="600px">
         <mj-image
-          src="../assets/03_pichach.png"
+          src="assets/03_pichach.png"
           alt="Meet the Grower — Czajkowski Farm — 55K bowls — With a 100-year history, Czajkowski farm knows the importance of crop rotation and soil management. This practice yield a healthier harvest, for us and you. — Farmers beside a tractor"
+          width="600px"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
+    <!-- Loyalty program: live card copy with the supplied portfolio artwork. -->
+    <mj-section background-color="#f1f2df" padding="28px 36px 0">
+      <mj-column
+        css-class="loyalty-card"
+        width="528px"
+        background-color="#dce8d9"
+        border-radius="22px"
+        padding="34px 28px 42px"
+      >
+        <!-- TODO: Confirm observed loyalty copy before any production use. -->
+        <mj-text
+          align="center"
+          color="#075344"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="34px"
+          line-height="1.2"
+          padding="0 0 28px"
+        >
+          Get access to exclusive merch by joining our free loyalty program.
+        </mj-text>
+        <mj-button
+          href="https://www.sweetgreen.com/"
+          background-color="#e5ff32"
+          color="#075344"
+          border-radius="28px"
+          width="100%"
+          font-size="22px"
+          font-weight="700"
+          inner-padding="18px 24px"
+          padding="0"
+        >
+          JOIN US NOW!
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#d9e8f5" padding="0">
+      <mj-column width="600px">
+        <mj-image
+          css-class="loyalty-photo"
+          src="assets/sweetgreenloyaltyprogram.png"
+          alt="A hand holding a sweetgreen loyalty app phone with fresh produce around the wrist"
           width="600px"
           padding="0"
         />

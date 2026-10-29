@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "validate": "mjml --validate src/email.mjml",
-    "build": "mkdir -p dist && mjml src/email.mjml -o dist/email.html",
+    "build": "mkdir -p dist && mjml src/email.mjml -o dist/email.html && node scripts/build-preview.mjs",
     "watch": "mjml --watch src/email.mjml -o dist/email.html",
     "visual-qa": "npm run build && node tests/visual-qa.mjs",
     "test": "npm run validate && npm run build"
