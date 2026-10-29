@@ -148,5 +148,16 @@
         </mj-button>
       </mj-column>
     </mj-section>
+    <!-- Meet the Grower: observed portfolio recreation from the supplied reference. -->
+    <mj-section background-color="#f1f2df" padding="0">
+      <mj-column width="600px">
+        <mj-image
+          src="../assets/03_pichach.png"
+          alt="Meet the Grower — Czajkowski Farm — 55K bowls — With a 100-year history, Czajkowski farm knows the importance of crop rotation and soil management. This practice yield a healthier harvest, for us and you. — Farmers beside a tractor"
+          width="600px"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
   </mj-body>
 </mjml>
