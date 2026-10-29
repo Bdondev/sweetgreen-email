@@ -4,12 +4,70 @@
       <mj-all font-family="Arial, Helvetica, sans-serif" color="#1f1f1f" />
       <mj-text font-size="16px" line-height="24px" />
     </mj-attributes>
+    <mj-style>
+      /* TODO: Replace olet bserved copy and confirm asset approval before release. */
+      .sr-only {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+      }
+      /* Provisional visual match to hero-reference.jpeg; verify Outlook before release. */
+      .hero-button {
+        position: relative !important;
+        z-index: 2 !important;
+        top: -36px !important;
+        height: 0 !important;
+        line-height: 0 !important;
+      }
+      .hero-button table {
+        width: 92% !important;
+      }
+      .hero-button > table {
+        margin-top: -36px !important;
+        margin-bottom: -36px !important;
+      }
+      .hero-button a {
+        white-space: nowrap !important;
+      }
+    </mj-style>
   </mj-head>
   <mj-body background-color="#f5f5f0">
-    <mj-section background-color="#ffffff" padding="0">
+    <!-- TODO: Confirm hero copy, asset approval, and CTA destination before release. -->
+    <mj-section background-color="#0b4f3f" padding="0">
       <mj-column width="600px">
-        <mj-text align="center" color="#666666" font-size="12px" padding="24px 24px 8px">
-          Foundation scaffold — campaign content pending audit inputs.
+        <mj-image
+          src="../assets/hero.png"
+          alt="sweetgreen — BLACK FRIDAY BLISS — 30% OFF"
+          width="600px"
+          padding="0"
+        />
+        <!-- TODO: Replace observed copy with approved campaign copy before release. -->
+        <mj-text css-class="sr-only" padding="0">
+          BLACK FRIDAY BLISS. 30% OFF.
+        </mj-text>
+        <!-- CTA URL provided by the project owner. -->
+        <mj-button
+          href="https://www.sweetgreen.com/"
+          background-color="#e5ff32"
+          color="#075344"
+          border-radius="24px"
+          font-size="16px"
+          font-weight="700"
+          inner-padding="16px 24px"
+          padding="0"
+          css-class="hero-button"
+        >
+          GET YOUR 30% OFF NOW!
+        </mj-button>
+        <!-- TODO: Confirm CTA text and offer terms before release. -->
+        <mj-text css-class="sr-only" padding="0">
+          Provisional hero CTA: GET YOUR 30% OFF NOW!
         </mj-text>
       </mj-column>
     </mj-section>

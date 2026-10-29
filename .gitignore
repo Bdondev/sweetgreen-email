@@ -1,3 +1,4 @@
 node_modules/
 dist/
+tests/screenshots/
 .DS_Store
