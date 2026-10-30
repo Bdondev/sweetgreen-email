@@ -1,7 +1,7 @@
 # Browser Visual QA
 
 Source: /Users/brandon/projects/sweetgreen-email/dist/email.html
-Compiled HTML bytes: **36744**
+Compiled HTML bytes: **36759**
 
 **Browser-only evidence:** this does not prove Gmail, Apple Mail, Outlook, or ESP compatibility.
 

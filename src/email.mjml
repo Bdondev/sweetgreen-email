@@ -160,7 +160,7 @@
     <mj-section background-color="#f1f2df" padding="0">
       <mj-column width="600px">
         <mj-image
-          src="assets/decorative-pumpkin.png"
+          src="assets/decorative-pumpkin-00-cream.jpg"
           alt=""
           width="64px"
           align="right"
@@ -186,7 +186,7 @@
     <mj-section background-color="#f1f2df" padding="0">
       <mj-column width="600px">
         <mj-image
-          src="assets/salad-bowl-banner.png"
+          src="assets/salad-bowl-banner.jpg"
           alt="Autumn harvest bowl with description, nutrition values, and salad bowl"
           width="560px"
           padding="0 20px"
@@ -270,7 +270,7 @@
       <mj-column width="600px">
         <mj-image
           css-class="loyalty-photo"
-          src="assets/sweetgreenloyaltyprogram.png"
+          src="assets/sweetgreenloyaltyprogram.jpg"
           alt="A hand holding a sweetgreen loyalty app phone with fresh produce around the wrist"
           width="600px"
           padding="0"
@@ -285,7 +285,7 @@
     >
       <mj-column width="560px">
         <mj-image
-          src="assets/footer-logo.png"
+          src="assets/footer-logo-solid.jpg"
           alt="sweetgreen"
           width="300px"
           padding="0 0 16px"
@@ -326,7 +326,7 @@
           Menu items may vary per location.<br />
           Copyright ©2026 sweetgreen, all rights reserved.<br />
           3102 36th Street, Los Angeles, CA 90018<br />
-          <span style="color:#e5ff32;">Unsubscribe</span>
+          <span style="color:#e5ff32;cursor:pointer;">Unsubscribe</span>
         </mj-text>
       </mj-column>
     </mj-section>
