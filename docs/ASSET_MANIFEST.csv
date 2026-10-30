@@ -1,2 +1,12 @@
 asset_id,role,source_path,format,source_width,source_height,display_width,display_height,availability,evidence,notes
-reference-image,design-reference,reference/sweetgreen-email.jpg,,,,,missing,Missing,Required for section and asset audit
+reference-image,design-reference,reference/sweetgreen-email.jpeg,JPEG,679,4630,,,,Provided,Reference,Full campaign reference supplied by project owner
+hero,hero-artwork,assets/hero.jpg,JPEG,1011,1556,600,,available,Provided,Composite artwork used for visual prototype
+autumn-pumpkin,decorative-artwork,assets/decorative-pumpkin.png,PNG,398,400,64,,available,Provided,Transparent decorative artwork
+autumn-bowl-banner,decorative-composite,assets/salad-bowl-banner.png,PNG,1536,1024,560,,available,Provided,Composite banner retained for portfolio build
+grower-composite,decorative-composite,assets/03_pichach.jpg,JPEG,847,1857,600,,available,Provided,Combined grower artwork and story treatment
+loyalty-artwork,loyalty-photo,assets/sweetgreenloyaltyprogram.png,PNG,1086,1448,600,,available,Provided,Phone/hand/produce artwork
+footer-logo,footer-brand-logo,assets/footer-logo.png,PNG,2172,724,280,,available,Provided,White sweetgreen logo for footer
+footer-instagram,footer-social-icon,assets/footer-instagram.png,PNG,820,820,56,56,available,Processed from provided asset,Instagram icon linked to official sweetgreen profile
+footer-facebook,footer-social-icon,assets/footer-facebook.png,PNG,820,820,56,56,available,Processed from provided asset,Facebook icon linked to official sweetgreen profile
+footer-x,footer-social-icon,assets/footer-x.png,PNG,820,820,56,56,available,Processed from provided asset,X icon linked to official sweetgreen profile
+footer-spotify,footer-social-icon,assets/footer-spotify.png,PNG,820,820,56,56,available,Processed from provided asset,Spotify icon linked to sweetgreen profile

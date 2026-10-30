@@ -16,6 +16,24 @@
         clip: rect(0, 0, 0, 0) !important;
         white-space: nowrap !important;
         border: 0 !important;
+        mso-hide: all !important;
+        display: none !important;
+      }
+      /* Shared campaign design tokens. */
+      .sg-button table {
+        border-radius: 28px !important;
+      }
+      .sg-button a {
+        color: #075344 !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        line-height: 120% !important;
+        padding: 15px 24px !important;
+        white-space: nowrap !important;
+      }
+      .harvest-button a {
+        color: #ffffff !important;
       }
       /* Provisional visual match to hero-reference.jpeg; verify Outlook before release. */
       .hero-button {
@@ -53,25 +71,63 @@
           font-size: 30px !important;
           line-height: 1.02 !important;
         }
+        .loyalty-copy div {
+          font-size: 28px !important;
+          line-height: 1.15 !important;
+        }
       }
       .loyalty-photo {
         position: relative !important;
         z-index: 1 !important;
         top: -150px !important;
-        margin-bottom: -150px !important;
+      margin-bottom: -230px !important;
       }
       .loyalty-card {
         position: relative !important;
         z-index: 2 !important;
       }
+      .loyalty-photo-section {
+        position: relative !important;
+        z-index: 1 !important;
+        margin-bottom: -245px !important;
+      }
+      .footer-section {
+        position: relative !important;
+        z-index: 2 !important;
+      }
     </mj-style>
+    <mj-raw>
+      <!--[if mso]>
+      <style type="text/css">
+        .hero-button {
+          position: static !important;
+          top: 0 !important;
+          height: auto !important;
+          line-height: normal !important;
+        }
+        .hero-button > table {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+        .loyalty-photo {
+          top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+        .loyalty-photo-section {
+          margin-bottom: 0 !important;
+        }
+      </style>
+      <![endif]-->
+    </mj-raw>
   </mj-head>
   <mj-body background-color="#f5f5f0">
+    <!-- Shared 600px email container for every campaign section. -->
+    <mj-wrapper padding="0">
     <!-- TODO: Confirm hero copy, asset approval, and CTA destination before release. -->
     <mj-section background-color="#0b4f3f" padding="0">
       <mj-column width="600px">
         <mj-image
-          src="assets/hero.png"
+          src="assets/hero.jpg"
           alt="sweetgreen — BLACK FRIDAY BLISS — 30% OFF"
           width="600px"
           padding="0"
@@ -85,12 +141,12 @@
           href="https://www.sweetgreen.com/"
           background-color="#e5ff32"
           color="#075344"
-          border-radius="24px"
+          border-radius="28px"
           font-size="16px"
           font-weight="700"
-          inner-padding="16px 24px"
+          inner-padding="15px 24px"
           padding="0"
-          css-class="hero-button"
+          css-class="sg-button hero-button"
         >
           GET YOUR 30% OFF NOW!
         </mj-button>
@@ -101,14 +157,14 @@
       </mj-column>
     </mj-section>
     <!-- Autumn Harvest Bowls: observed portfolio recreation from reference image. -->
-    <mj-section background-color="#f1f2df" padding="0 20px 0">
-      <mj-column width="560px">
+    <mj-section background-color="#f1f2df" padding="0">
+      <mj-column width="600px">
         <mj-image
           src="assets/decorative-pumpkin.png"
           alt=""
           width="64px"
           align="right"
-          padding="0"
+          padding="0 20px"
         />
         <mj-text
           css-class="harvest-title"
@@ -119,7 +175,7 @@
           font-weight="900"
           line-height="1.02"
           letter-spacing="-0.5px"
-          padding="0 32px 18px"
+          padding="0 52px 18px"
           text-transform="uppercase"
         >
           THE AUTUMN<br />HARVEST BOWLS
@@ -127,13 +183,13 @@
       </mj-column>
     </mj-section>
     <!-- Portfolio composite supplied in assets; replace with separated/live content if required for a production send. -->
-    <mj-section background-color="#f1f2df" padding="0 20px">
-      <mj-column width="560px">
+    <mj-section background-color="#f1f2df" padding="0">
+      <mj-column width="600px">
         <mj-image
           src="assets/salad-bowl-banner.png"
           alt="Autumn harvest bowl with description, nutrition values, and salad bowl"
           width="560px"
-          padding="0"
+          padding="0 20px"
         />
         <!-- TODO: Confirm composite copy and nutrition values before any production use. -->
         <mj-text css-class="sr-only" padding="0">
@@ -141,10 +197,10 @@
         </mj-text>
       </mj-column>
     </mj-section>
-    <mj-section background-color="#f1f2df" padding="24px 20px 28px">
-      <mj-column width="560px">
+    <mj-section background-color="#f1f2df" padding="24px 0 28px">
+      <mj-column width="600px">
         <mj-button
-          css-class="harvest-button"
+          css-class="sg-button harvest-button"
           href="https://www.sweetgreen.com/"
           background-color="#075344"
           color="#ffffff"
@@ -159,10 +215,10 @@
       </mj-column>
     </mj-section>
     <!-- Meet the Grower: observed portfolio recreation from the supplied reference. -->
-    <mj-section background-color="#f1f2df" padding="0">
+    <mj-section background-color="#ffffff" padding="0">
       <mj-column width="600px">
         <mj-image
-          src="assets/03_pichach.png"
+          src="assets/03_pichach.jpg"
           alt="Meet the Grower — Czajkowski Farm — 55K bowls — With a 100-year history, Czajkowski farm knows the importance of crop rotation and soil management. This practice yield a healthier harvest, for us and you. — Farmers beside a tractor"
           width="600px"
           padding="0"
@@ -170,16 +226,17 @@
       </mj-column>
     </mj-section>
     <!-- Loyalty program: live card copy with the supplied portfolio artwork. -->
-    <mj-section background-color="#f1f2df" padding="28px 36px 0">
+    <mj-section background-color="#ffffff" padding="0 20px 0">
       <mj-column
         css-class="loyalty-card"
-        width="528px"
+        width="560px"
         background-color="#dce8d9"
         border-radius="22px"
         padding="34px 28px 42px"
       >
         <!-- TODO: Confirm observed loyalty copy before any production use. -->
         <mj-text
+          css-class="loyalty-copy"
           align="center"
           color="#075344"
           font-family="Georgia, 'Times New Roman', serif"
@@ -190,21 +247,26 @@
           Get access to exclusive merch by joining our free loyalty program.
         </mj-text>
         <mj-button
+          css-class="sg-button loyalty-button"
           href="https://www.sweetgreen.com/"
           background-color="#e5ff32"
           color="#075344"
           border-radius="28px"
           width="100%"
-          font-size="22px"
+          font-size="16px"
           font-weight="700"
-          inner-padding="18px 24px"
+          inner-padding="15px 24px"
           padding="0"
         >
           JOIN US NOW!
         </mj-button>
       </mj-column>
     </mj-section>
-    <mj-section background-color="#d9e8f5" padding="0">
+    <mj-section
+      css-class="loyalty-photo-section"
+      background-color="#d9e8f5"
+      padding="0"
+    >
       <mj-column width="600px">
         <mj-image
           css-class="loyalty-photo"
@@ -215,5 +277,59 @@
         />
       </mj-column>
     </mj-section>
+    <!-- Footer: observed brand, social, legal, address, and unsubscribe treatment. -->
+    <mj-section
+      css-class="footer-section"
+      background-color="#075344"
+      padding="30px 20px 28px"
+    >
+      <mj-column width="560px">
+        <mj-image
+          src="assets/footer-logo.png"
+          alt="sweetgreen"
+          width="300px"
+          padding="0 0 16px"
+        />
+        <mj-text
+          align="center"
+          color="#ffffff"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="28px"
+          line-height="1.2"
+          padding="0 0 20px"
+        >
+          Made from scratch
+        </mj-text>
+        <mj-table align="center" width="280px" cellpadding="0" cellspacing="0" padding="0 0 22px">
+          <tr>
+            <td width="56" style="width:56px;padding:0 7px;vertical-align:middle;">
+              <a href="https://www.instagram.com/sweetgreen/" target="_blank" style="text-decoration:none;"><img src="assets/footer-instagram.png" width="56" height="56" alt="Instagram" style="display:block;border:0;width:56px;height:56px;" /></a>
+            </td>
+            <td width="56" style="width:56px;padding:0 7px;vertical-align:middle;">
+              <a href="https://www.facebook.com/sweetgreen/" target="_blank" style="text-decoration:none;"><img src="assets/footer-facebook.png" width="56" height="56" alt="Facebook" style="display:block;border:0;width:56px;height:56px;" /></a>
+            </td>
+            <td width="56" style="width:56px;padding:0 7px;vertical-align:middle;">
+              <a href="https://x.com/sweetgreen" target="_blank" style="text-decoration:none;"><img src="assets/footer-x.png" width="56" height="56" alt="X" style="display:block;border:0;width:56px;height:56px;" /></a>
+            </td>
+            <td width="56" style="width:56px;padding:0 7px;vertical-align:middle;">
+              <a href="https://open.spotify.com/user/sweetgreen" target="_blank" style="text-decoration:none;"><img src="assets/footer-spotify.png" width="56" height="56" alt="Spotify" style="display:block;border:0;width:56px;height:56px;" /></a>
+            </td>
+          </tr>
+        </mj-table>
+        <mj-text
+          align="center"
+          color="#ffffff"
+          font-size="16px"
+          line-height="1.35"
+          padding="0"
+        >
+          Menu items may vary per location.<br />
+          Copyright ©2026 sweetgreen, all rights reserved.<br />
+          3102 36th Street, Los Angeles, CA 90018<br />
+          <span style="color:#e5ff32;">Unsubscribe</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    </mj-wrapper>
   </mj-body>
 </mjml>

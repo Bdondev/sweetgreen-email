@@ -2,7 +2,7 @@
 
 ## Status
 
-Blocked pending the reference image and approved campaign inputs.
+Footer section built from the supplied reference and assets; the footer address is approved, while production ESP values remain open.
 
 ## Proposed module structure
 
@@ -10,7 +10,7 @@ Blocked pending the reference image and approved campaign inputs.
 2. Header/brand module, if present in the supplied design.
 3. One section module per numbered design section, built in reading order.
 4. Reusable live-text CTA module with verified destination.
-5. Footer, legal, address, and unsubscribe module using verified ESP syntax.
+5. Footer, legal, address, and unsubscribe module using live HTML; ESP syntax is out of scope for this portfolio build.
 
 The actual section list, mobile order, asset treatment, and copy remain undefined until the reference is available.
 
